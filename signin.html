@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmerSpot - Authentication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="auth-container">
+        <div class="brand">
+            <h2>🌾 FarmsPot</h2>
+            <p>Empowering smallholder farmers & global trade.</p>
+        </div>
+
+        <!-- SIGN IN FORM  -->
+        <form id="loginForm" class="auth-form">
+            <h3>Welcome Back</h3>
+            <p class="subtitle">Log in to manage your farm and orders</p>
+
+            <div class="input-group">
+                <label for="login-email">Email Address</label>
+                <input type="email" id="login-email" placeholder="farmer@example.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="••••••••" required>
+            </div>
+
+            <button type="submit" class="btn">Sign In</button>
+
+            <p class="switch-text">New to FarmerSpot? <a href="#" id="toSignUp">Create an account</a></p>
+        </form>
+
+
+        
+        <!-- SIGN UP FORM -->
+<form id="registerForm" class="auth-form hidden">
+    <h3>Join FarmsPot</h3>
+    <p class="subtitle">Provide your details to open your digital agricultural profile</p>
+
+    <div class="input-group">
+        <label for="reg-fullname">Full Name</label>
+        <input type="text" id="reg-fullname" placeholder="John Doe" required>
+    </div>
+
+    <div class="input-group">
+        <label for="reg-username">Username</label>
+        <input type="text" id="reg-username" placeholder="johndoe123" required>
+    </div>
+
+    <div class="input-group">
+        <label for="reg-email">Email Address</label>
+        <input type="email" id="reg-email" placeholder="farmer@example.com">
+    </div>
+
+    <div class="input-group">
+        <label for="reg-phone">Phone Number</label>
+        <input type="tel" id="reg-phone" placeholder="e.g. +234..." required>
+    </div>
+
+    <div class="input-group">
+        <label for="reg-password">Password</label>
+        <input type="password" id="reg-password" placeholder="••••••••" required>
+    </div>
+
+    <div class="input-group">
+        <label for="reg-location">Farm Location</label>
+        <input type="text" id="reg-location" placeholder="e.g. Oyo State, Nigeria">
+    </div>
+
+    
+    <div style="display: flex; gap: 10px;">
+        <div class="input-group" style="flex: 1;">
+            <label for="reg-size">Farm Size (Hectares)</label>
+            <input type="number" id="reg-size" step="0.1" placeholder="2.5">
+        </div>
+        <div class="input-group" style="flex: 1;">
+            <label for="reg-yield">Avg Yield (Kg)</label>
+            <input type="number" id="reg-yield" step="0.1" placeholder="1200">
+        </div>
+    </div>
+
+    <button type="submit" class="btn">Create Account</button>
+    <p class="switch-text">Already have an account? <a href="#" id="toSignIn">Sign In instead</a></p>
+</form>
+
+
+       <script src="app.js"></script>
+    
+    
+</body>
+</html>

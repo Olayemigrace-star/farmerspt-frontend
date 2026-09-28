@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+.auth-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px #2e5b3914; 
+}
+
+
+.brand {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.brand h2 {
+    color: #2e5b39; 
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+.brand p {
+    color: #667085;
+    font-size: 14px;
+}
+
+
+.auth-form h3 {
+    color: #1d2939;
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    color: #667085;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+
+.input-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #344054;
+    margin-bottom: 6px;
+}
+
+
+.input-group input, 
+.input-group select {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 15px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    outline: none;
+    background-color: #fcfcfd;
+    transition: all 0.2s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #2e5b39;
+    box-shadow: 0 0 0 4px rgba(46, 91, 57, 0.15);
+    background-color: #ffffff;
+}
+
+
+.btn {
+    width: 100%;
+    background-color: #2e5b39; 
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #214228;
+}
+
+
+.switch-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #667085;
+}
+
+.switch-text a {
+    color: #2e5b39;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.switch-text a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
